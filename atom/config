@@ -1,0 +1,17 @@
+{
+  "*": {
+    "core": {
+      "projectHome": "/Users/will/src",
+      "telemetryConsent": "limited"
+    },
+    "editor": {
+      "showInvisibles": true
+    },
+    "exception-reporting": {
+      "userId": "f0708957-3676-0682-8d11-c7a232ea7572"
+    },
+    "welcome": {
+      "showOnStartup": false
+    }
+  }
+}

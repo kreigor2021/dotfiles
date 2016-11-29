@@ -1,0 +1,9 @@
+[user]
+	name = Will Ellett
+	email = will@cozy.co
+[push]
+	default = current
+[pull]
+	rebase = true
+[core]
+	excludesfile = /Users/will/.gitignore_global

@@ -1,0 +1,3 @@
+export OPS_SRC="$HOME/src/cozy-ops"
+export PATH=$HOME/bin:$OPS_SRC/chef-repo/bin:$PATH
+export EDITOR='vim'

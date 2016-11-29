@@ -3,3 +3,21 @@
       create: true
       relink: true
 
+- clean: ['~']
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
+      # build .zshenv out of env and env.secret
+    - [cat env* > ~zshenv, Building zshenv]
+
+- link: 
+    ~/.aliases: aliases
+    ~/.atom/config.cson:
+      create: true
+      path: atom/config
+    ~/.gitconfig: gitconfig
+    ~/.gitignore_global: gitignore_global
+    ~/.vimrc: vimrc
+    ~/.zlogout: zlogout
+    ~/.zshenv: ~zshenv
+    ~/.zshrc: zshrc

@@ -1,0 +1,47 @@
+# cd shortcuts
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias -- -="cd -"
+alias cdsrc="cd $OPS_SRC"
+
+# Detect which `ls` flavor is in use
+if ls --color > /dev/null 2>&1; then # GNU `ls`
+  colorflag="--color"
+else # OS X `ls`
+  colorflag="-G"
+fi
+
+alias ls="ls ${colorflag}"
+alias l="ls"
+alias ll="ls -lh ${colorflag}"
+alias la="ls -lAh ${colorflag}"
+
+# git aliases
+alias g='git'
+alias gs='git status'
+alias gl='git pull'
+alias gup='git fetch && git rebase'
+alias gupr='for dir in ./*; do (echo "\n$dir" && cd "$dir" && gup); done'
+alias gp='git push'
+alias gc='git commit -v'
+alias gca='git commit -v -a'
+alias gcam='git commit -vam '
+alias glgp="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
+alias glg='git log --stat --max-count=5'
+alias glgg='git log --graph --max-count=5'
+alias glgo='git log --stat --oneline'
+alias ga='git add'
+alias gm='git merge'
+
+# knife aliases
+alias ks='knife status'
+
+# asst'd commands
+eval "$(hub alias -s)"
+
+if which rbenv > /dev/null; then
+    eval "$(rbenv init --no-rehash -)"
+    (rbenv rehash &) 2> /dev/null
+fi
