@@ -1,4 +1,3 @@
 fortune
 
-echo ""
-echo "END OF LINE."
+echo "\nEND OF LINE."
