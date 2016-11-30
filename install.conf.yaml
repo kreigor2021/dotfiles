@@ -18,6 +18,7 @@
     ~/.gitconfig: gitconfig
     ~/.gitignore_global: gitignore_global
     ~/.vimrc: vimrc
+    ~/.zlogin: zlogin
     ~/.zlogout: zlogout
     ~/.zshenv: ~zshenv
     ~/.zshrc: zshrc
