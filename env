@@ -1,3 +1,4 @@
 export OPS_SRC="$HOME/src/cozy-src"
+export COZY_PROJECTS_DIR=$OPS_SRC
 export PATH=$HOME/bin:$OPS_SRC/chef-repo/bin:$PATH
 export EDITOR='vim'

@@ -17,7 +17,9 @@
 ehthumbs.db
 Thumbs.db
 
-# temp files #
-##############
+# state files #
+###############
 *.swp
 ~*
+*.orig
+.bundle/
