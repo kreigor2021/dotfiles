@@ -21,23 +21,21 @@ alias la="ls -lAh ${colorflag}"
 # git aliases
 alias g='git'
 alias gs='git status'
-alias gl='git pull'
 alias gup='git fetch && git rebase'
 alias gupr='for dir in ./*; do (echo "\n$dir" && cd "$dir" && gup); done'
-alias gp='git push'
-alias gpr='git pull-request'
-alias gc='git commit -v'
-alias gca='git commit -v -a'
-alias gcam='git commit -vam '
-alias glgp="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
-alias glg='git log --stat --max-count=5'
-alias glgg='git log --graph --max-count=5'
-alias glgo='git log --stat --oneline'
 alias ga='git add'
 alias gm='git merge'
 
 # knife aliases
+alias k="knife"
 alias ks='knife status'
+alias ksr="knife status -r"
+alias ksg="knife status | grep"
+alias krff="knife role from file"
+alias keff="knife environment from file"
+alias kdff="knife data bag from file"
+alias kcu="knife cookbook upload"
+kcuf() { knife cookbook upload $@ --freeze }
 
 # asst'd commands
 eval "$(hub alias -s)"

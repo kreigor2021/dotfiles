@@ -53,4 +53,4 @@ function prodmode {
   printf "Using Gemfile for production mode.\n"
   unset BUNDLE_GEMFILE
 }
-devmode # Go into devmode by default
+#devmode # Go into devmode by default
