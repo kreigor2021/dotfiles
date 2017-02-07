@@ -14,6 +14,8 @@
 	cam = commit -vam
 	co = checkout
 	cob = checkout -b
+        com = co master
+        cod = co develop
 	lg = log --stat --max-count=5
 	lgp = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
 	lgg = log --graph --max-count=5

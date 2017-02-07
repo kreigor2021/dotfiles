@@ -31,9 +31,9 @@ alias k="knife"
 alias ks='knife status'
 alias ksr="knife status -r"
 alias ksg="knife status | grep"
-alias krff="knife role from file"
-alias keff="knife environment from file"
-alias kdff="knife data bag from file"
+alias kr="knife role"
+alias ke="knife environment"
+alias kd="knife data bag"
 alias kcu="knife cookbook upload"
 kcuf() { knife cookbook upload $@ --freeze }
 
