@@ -20,5 +20,6 @@
     ~/.vimrc: vimrc
     ~/.zlogin: zlogin
     ~/.zlogout: zlogout
+    ~/.zprofile: zprofile
     ~/.zshenv: ~zshenv
     ~/.zshrc: zshrc

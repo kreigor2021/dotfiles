@@ -3,5 +3,4 @@ export COZY_PROJECTS_DIR="$HOME/src/cozy-src"
 export CHEF_CLIENT_KEY='~/.chef/will.pem'
 export CHEF_CLIENT_NAME='will'
 
-export PATH=$HOME/bin:$OPS_SRC/chef-repo/bin:$PATH
 export EDITOR='vim'
