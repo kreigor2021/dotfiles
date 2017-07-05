@@ -1,6 +1,7 @@
 {
   "*": {
     "core": {
+      "audioBeep": false,
       "projectHome": "/Users/will/src",
       "telemetryConsent": "limited"
     },
