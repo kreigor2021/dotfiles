@@ -33,9 +33,12 @@ alias ksr="knife status -r"
 alias ksg="knife status | grep"
 alias kr="knife role"
 alias ke="knife environment"
+alias keff="knife environment from file"
 alias kd="knife data bag"
 alias kcu="knife cookbook upload"
 kcuf() { knife cookbook upload $@ --freeze }
+dbagshow() { knife data bag show $@ -Fj }
+edbagshow() { knife data bag show $@ -Fj --secret-file ~/src/cozy-ops/secret_data_bags/encrypted_data_bag_secret }
 
 # asst'd commands
 eval "$(hub alias -s)"
