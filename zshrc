@@ -33,6 +33,9 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
+# iterm integration
+source ~/.iterm2_shell_integration.`basename $SHELL`
+
 # User configuration
 source ~/.aliases
 
@@ -54,3 +57,22 @@ function prodmode {
   unset BUNDLE_GEMFILE
 }
 #devmode # Go into devmode by default
+
+function nvm_src {
+  printf "Sourcing nvm shell extensions"
+  source "/usr/local/opt/nvm/nvm.sh"
+}
+
+# The following lines were added by compinstall
+
+zstyle ':completion:*' completer _expand _complete _match _prefix
+zstyle ':completion:*' group-name ''
+zstyle ':completion:*' insert-unambiguous true
+zstyle ':completion:*' list-colors ''
+zstyle ':completion:*' match-original both
+zstyle ':completion:*' matcher-list '' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'r:|[._-]=** r:|=**'
+zstyle :compinstall filename '/Users/will/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall

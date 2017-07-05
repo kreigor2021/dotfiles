@@ -52,5 +52,15 @@ alias browser="python -m webbrowser -t"
 
 # Use curl to make a nicer ping, useful for quickly monitoring a service
 curlping () {
-  while true; do curl -sf -m3 $1 > /dev/null && echo "[$(date '+%H:%M:%S')] √" || echo "[$(date '+%H:%M:%S')] F"; sleep 1; done
+  while true; do curl -sf -m3 $1 > /dev/null && echo -n '.' || echo -n 'F'; sleep 1; done
+}
+
+# ping short output
+sping () {
+  while true; do ping -ot 1 $1 > /dev/null && echo -n '.' || echo -n 'F'; sleep 1; done;
+}
+
+cd() {
+  builtin cd $@
+  if [ -e .env ]; then echo "sourcing .env"; source .env; fi
 }
