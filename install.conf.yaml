@@ -17,6 +17,7 @@
       path: atom/config
     ~/.gitconfig: gitconfig
     ~/.gitignore_global: gitignore_global
+    ~/.nethackrc: nethackrc
     ~/.vimrc: vimrc
     ~/.zlogin: zlogin
     ~/.zlogout: zlogout
