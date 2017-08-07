@@ -13,3 +13,11 @@ if has("autocmd")
   " Also load indent files, to automatically do language-dependent indenting.
   filetype plugin indent on
 endif
+
+set statusline=%f     " Path to the file
+set statusline+=%=    " Switch to the right side
+set statusline+=%l    " Current line
+set statusline+=/     " Separator
+set statusline+=%L    " Total lines
+
+set laststatus=2      " always show status line
