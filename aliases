@@ -40,6 +40,10 @@ kcuf() { knife cookbook upload $@ --freeze }
 dbagshow() { knife data bag show $@ -Fj }
 edbagshow() { knife data bag show $@ -Fj --secret-file $OPS_SRC/secret_data_bags/encrypted_data_bag_secret }
 
+# terraform aliases
+alias tf='terraform'
+alias tss='tf state show'
+
 # asst'd commands
 eval "$(hub alias -s)"
 
@@ -52,12 +56,12 @@ alias browser="python -m webbrowser -t"
 
 # Use curl to make a nicer ping, useful for quickly monitoring a service
 curlping () {
-  while true; do curl -sf -m3 $1 > /dev/null && echo -n '.' || echo -n 'F'; sleep 1; done
+  while true; do curl -sf -m3 $@ > /dev/null && echo -n '.' || echo -n 'F'; sleep 1; done
 }
 
 # ping short output
 sping () {
-  while true; do ping -ot 1 $1 > /dev/null && echo -n '.' || echo -n 'F'; sleep 1; done;
+  while true; do ping -ot 1 $@ > /dev/null && echo -n '.' || echo -n 'F'; sleep 1; done;
 }
 
 cd() {

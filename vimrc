@@ -21,3 +21,10 @@ set statusline+=/     " Separator
 set statusline+=%L    " Total lines
 
 set laststatus=2      " always show status line
+
+set hlsearch
+
+" memory usage tuning, 1GB/buffer, 8GB total
+set maxmem=1048576
+set maxmemtot=8388608
+set maxmempattern=32768

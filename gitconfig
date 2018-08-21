@@ -1,6 +1,8 @@
 [user]
 	name = Will Ellett
 	email = will@cozy.co
+[merge]
+	ff = no
 [push]
 	default = current
 [pull]

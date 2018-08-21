@@ -1,19 +1,13 @@
-{
-  "*": {
-    "core": {
-      "audioBeep": false,
-      "projectHome": "/Users/will/src",
-      "telemetryConsent": "limited"
-    },
-    "editor": {
-      "fontSize": 12,
-      "showInvisibles": true
-    },
-    "exception-reporting": {
-      "userId": "f0708957-3676-0682-8d11-c7a232ea7572"
-    },
-    "welcome": {
-      "showOnStartup": false
-    }
-  }
-}
+"*":
+  core:
+    audioBeep: false
+    projectHome: "/Users/will/src"
+    telemetryConsent: "limited"
+  editor:
+    fontSize: 12
+    preferredLineLength: 120
+    showInvisibles: true
+  "exception-reporting":
+    userId: "f0708957-3676-0682-8d11-c7a232ea7572"
+  welcome:
+    showOnStartup: false
