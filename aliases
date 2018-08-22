@@ -47,11 +47,6 @@ alias tss='tf state show'
 # asst'd commands
 eval "$(hub alias -s)"
 
-if which rbenv > /dev/null; then
-  eval "$(rbenv init --no-rehash -)"
-  (rbenv rehash &) 2> /dev/null
-fi
-
 alias browser="python -m webbrowser -t"
 
 # Use curl to make a nicer ping, useful for quickly monitoring a service
