@@ -49,6 +49,9 @@ eval "$(hub alias -s)"
 
 alias browser="python -m webbrowser -t"
 
+# reup sts creds (requires auth2aws utility)
+alias auth2awsrenew='for r in $(auth2aws --listroles); do auth2aws --login --role $r; done'
+
 # Use curl to make a nicer ping, useful for quickly monitoring a service
 curlping () {
   while true; do curl -sf -m3 $@ > /dev/null && echo -n '.' || echo -n 'F'; sleep 1; done
