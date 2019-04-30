@@ -1,14 +1,14 @@
 [user]
 	name = Will Ellett
 	email = will@cozy.co
+[core]
+	excludesfile = /Users/wellett/.gitignore_global
 [merge]
 	ff = no
 [push]
 	default = current
 [pull]
 	rebase = true
-[core]
-	excludesfile = /Users/will/.gitignore_global
 [alias]
 	br = branch
 	cm = commit -v

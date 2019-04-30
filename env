@@ -1,5 +1,5 @@
-export OPS_SRC="$HOME/src/cozy"
 export COZY_PROJECTS_DIR="$HOME/src/cozy"
+export COSTAR_PROJECTS_DIR="$HOME/src/costar"
 export CHEF_CLIENT_KEY='~/.chef/will.pem'
 export CHEF_CLIENT_NAME='will'
 export NVM_DIR="$HOME/.nvm"
