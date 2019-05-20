@@ -39,7 +39,7 @@ alias kd="knife data bag"
 alias kcu="knife cookbook upload"
 kcuf() { knife cookbook upload $@ --freeze }
 dbagshow() { knife data bag show $@ -Fj }
-edbagshow() { knife data bag show $@ -Fj --secret-file $OPS_SRC/secret_data_bags/encrypted_data_bag_secret }
+edbagshow() { knife data bag show $@ -Fj --secret-file $COZY_PROJECTS_DIR/secret_data_bags/encrypted_data_bag_secret }
 
 # terraform aliases
 alias tf='terraform'
