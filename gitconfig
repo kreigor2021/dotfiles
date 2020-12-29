@@ -1,8 +1,8 @@
 [user]
 	name = Will Ellett
-	email = will@cozy.co
+	email = william.ellett@dutchie.com
 [core]
-	excludesfile = /Users/wellett/.gitignore_global
+	excludesfile = /Users/williamellett/.gitignore_global
 [merge]
 	ff = no
 [push]
