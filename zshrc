@@ -58,25 +58,6 @@ source ~/.iterm2_shell_integration.`basename $SHELL`
 # User configuration
 source ~/.aliases
 
-function rubymode() {
-  if [[ $BUNDLE_GEMFILE ]]; then
-    printf 'devmode'
-  else
-    printf 'prodmode'
-  fi
-}
-
-function devmode {
-  printf "Using Gemfile.devel for development mode.\n"
-  export BUNDLE_GEMFILE=Gemfile.devel
-}
-
-function prodmode {
-  printf "Using Gemfile for production mode.\n"
-  unset BUNDLE_GEMFILE
-}
-#devmode # Go into devmode by default
-
 function nvm_src {
   printf "Sourcing nvm shell extensions"
   export NVM_DIR="$HOME/.nvm"
