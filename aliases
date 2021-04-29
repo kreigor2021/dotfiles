@@ -22,7 +22,7 @@ alias la="ls -lAh ${colorflag}"
 # git aliases
 alias g='git'
 alias gs='git status'
-alias gup='git pull --rebase'
+alias gup='git pull --rebase --prune'
 alias gupr='for dir in ./*; do (echo "\n$dir" && cd "$dir" && gup); done'
 alias ga='git add'
 alias gm='git merge'
