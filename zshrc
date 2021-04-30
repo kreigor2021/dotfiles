@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/$(whoami)/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -46,6 +46,8 @@ esac
 # User configuration
 source ~/.aliases
 
+export EDITOR=vim
+
 function rubymode() {
   if [[ $BUNDLE_GEMFILE ]]; then
     printf 'devmode'
@@ -89,6 +91,9 @@ compinit
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# run the function defined above so nvm works, causes shell slowdown
+nvm_src
 
 eval "$(direnv hook zsh)"
