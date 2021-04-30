@@ -33,8 +33,15 @@ plugins=(git zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
-# iterm integration
-source ~/.iterm2_shell_integration.`basename $SHELL`
+# source different files per os
+case "$OSTYPE" in
+  darwin*)
+    source ~/.zsh-darwin
+  ;;
+  linux*)
+    source ~/.zsh-linux
+  ;;
+esac
 
 # User configuration
 source ~/.aliases
