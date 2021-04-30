@@ -1,3 +1,3 @@
-fortune -w
+# fortune -w
 
 echo "\nEND OF LINE."
