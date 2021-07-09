@@ -33,6 +33,14 @@ plugins=(git zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
+# magic config for cd
+setopt AUTO_CD
+
+# history configuration
+setopt HIST_EXPIRE_DUPS_FIRST
+setopt HIST_IGNORE_SPACE
+setopt APPEND_HISTORY
+
 # source different files per os
 case "$OSTYPE" in
   darwin*)
