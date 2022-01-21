@@ -25,3 +25,5 @@
 	pr = pull-request
 [rebase]
 	autoStash = true
+[hub]
+	protocol = ssh
