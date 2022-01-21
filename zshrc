@@ -56,25 +56,6 @@ source ~/.aliases
 
 export EDITOR=vim
 
-function rubymode() {
-  if [[ $BUNDLE_GEMFILE ]]; then
-    printf 'devmode'
-  else
-    printf 'prodmode'
-  fi
-}
-
-function devmode {
-  printf "Using Gemfile.devel for development mode.\n"
-  export BUNDLE_GEMFILE=Gemfile.devel
-}
-
-function prodmode {
-  printf "Using Gemfile for production mode.\n"
-  unset BUNDLE_GEMFILE
-}
-#devmode # Go into devmode by default
-
 function nvm_src {
   printf "Sourcing nvm shell extensions"
   export NVM_DIR="$HOME/.nvm"
@@ -104,4 +85,3 @@ export PATH="$PATH:$HOME/.rvm/bin:$HOME/.local/bin"
 # run the function defined above so nvm works, causes shell slowdown
 nvm_src
 
-eval "$(direnv hook zsh)"
