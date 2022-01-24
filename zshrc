@@ -82,6 +82,10 @@ export PATH="$PATH:$HOME/.rvm/bin:$HOME/.local/bin"
 
 # source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# terraform shell tab-completion
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/local/bin/terraform terraform
+
 # run the function defined above so nvm works, causes shell slowdown
 nvm_src
 
