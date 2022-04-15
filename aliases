@@ -26,20 +26,6 @@ alias guprr='for dir in ./*; do (echo "\n$dir" && cd "$dir" && gupr); done'
 alias ga='git add'
 alias gm='git merge'
 
-# knife aliases
-alias k="knife"
-alias ks='knife status'
-alias ksr="knife status -r"
-alias ksg="knife status | grep"
-alias kr="knife role"
-alias ke="knife environment"
-alias keff="knife environment from file"
-alias kd="knife data bag"
-alias kcu="knife cookbook upload"
-kcuf() { knife cookbook upload $@ --freeze }
-dbagshow() { knife data bag show $@ -Fj }
-edbagshow() { knife data bag show $@ -Fj --secret-file $COZY_PROJECTS_DIR/secret_data_bags/encrypted_data_bag_secret }
-
 # terraform aliases
 alias tf='terraform'
 alias tss='tf state show'
