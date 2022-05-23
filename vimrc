@@ -28,3 +28,5 @@ set hlsearch
 set maxmem=1048576
 set maxmemtot=8388608
 set maxmempattern=32768
+
+set directory=$HOME/.vim/swapfiles//

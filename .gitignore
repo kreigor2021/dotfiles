@@ -1,2 +1,5 @@
 # keep it sekret keep it safe
 *.secret
+
+# ignore compiled files
+~*

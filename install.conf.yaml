@@ -19,6 +19,8 @@
     ~/.gitignore_global: gitignore_global
     ~/.nethackrc: nethackrc
     ~/.vimrc: vimrc
+    ~/.zsh-linux: zsh-linux
+    ~/.zsh-darwin: zsh-darwin
     ~/.zlogin: zlogin
     ~/.zlogout: zlogout
     ~/.zshenv: ~zshenv
