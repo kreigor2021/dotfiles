@@ -34,6 +34,9 @@ alias tss='tf state show'
 eval "$(hub alias -s)"
 
 alias browser="python -m webbrowser -t"
+alias dofile="xargs -d'\n' -I{} -P 0 sh -c"
+
+alias vault_login="vault login -method=ldap -address=$VAULT_ADDR username=$(whoami)"
 
 # Use curl to make a nicer ping, useful for quickly monitoring a service
 curlping () {

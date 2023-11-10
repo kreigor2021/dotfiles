@@ -8,7 +8,7 @@
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
       # build .zshenv out of env and env.secret
-    - [cat env* > ~zshenv, Building zshenv]
+    - [cat env* > '~zshenv', Building zshenv]
 
 - link: 
     ~/.aliases: aliases
